@@ -1,4 +1,4 @@
-# VidyāMitra — Intelligent Career Agent
+# AURA — AI Career Agent
 
 AI-Powered Resume Evaluator, Trainer & Career Planner
 
