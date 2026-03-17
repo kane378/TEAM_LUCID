@@ -37,12 +37,11 @@ export default function Register({ onRegister }: Props) {
   }
 
   return (
-    <div style={{ minHeight:'100vh', background:'linear-gradient(135deg,#667eea,#764ba2)', display:'flex', alignItems:'center', justifyContent:'center', padding:20 }}>
+    <div style={{ minHeight:'100vh', background:'linear-gradient(90deg, #84FFC9, #AAB2FF, #ECA0FF)', display:'flex', alignItems:'center', justifyContent:'center', padding:20 }}>
       <div style={{ background:'white', borderRadius:20, padding:40, width:'100%', maxWidth:480, boxShadow:'0 20px 60px rgba(0,0,0,0.2)' }}>
         <div style={{ textAlign:'center', marginBottom:24 }}>
-          <div style={{ fontSize:40 }}>🚀</div>
           <h1 style={{ fontSize:24, fontWeight:800, color:'#2d3748', marginBottom:4 }}>Create Account</h1>
-          <p style={{ color:'#6C63FF', fontSize:11, fontWeight:700, letterSpacing:2, textTransform:'uppercase' }}>Join VidyāMitra Today</p>
+          <p style={{ color:'#6C63FF', fontSize:11, fontWeight:700, letterSpacing:2, textTransform:'uppercase' }}>Join Aura Today</p>
         </div>
 
         {error && <div style={{ background:'#fff5f5', border:'1px solid #fed7d7', borderRadius:8, padding:'10px 14px', color:'#e53e3e', fontSize:13, marginBottom:14 }}>{error}</div>}
@@ -74,7 +73,7 @@ export default function Register({ onRegister }: Props) {
             <div style={{ position:'relative' }}>
               <input type={showPw ? 'text' : 'password'} value={password} onChange={e => setPassword(e.target.value)} placeholder="At least 6 characters" style={{ ...inputStyle, paddingRight:40 }} />
               <button type="button" onClick={() => setShowPw(p => !p)} style={{ position:'absolute', right:12, top:'50%', transform:'translateY(-50%)', background:'none', border:'none', cursor:'pointer', fontSize:14 }}>
-                {showPw ? '🙈' : '👁️'}
+                {showPw ? '🔒' : '🔓'}
               </button>
             </div>
           </div>
@@ -89,7 +88,7 @@ export default function Register({ onRegister }: Props) {
             disabled={loading}
             style={{ width:'100%', padding:'12px 0', background:'linear-gradient(135deg,#6C63FF,#764ba2)', color:'white', border:'none', borderRadius:8, fontSize:15, fontWeight:700, cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.8 : 1 }}
           >
-            {loading ? 'Creating account...' : '🌟 Create Account'}
+            {loading ? 'Creating account...' : 'Create Account'}
           </button>
         </form>
 
